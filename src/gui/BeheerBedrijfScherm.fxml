@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<fx:root prefHeight="237.0" prefWidth="489.0" type="VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="479.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="52.0" text="url" />
+            <TextField />
+         </children>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="479.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="52.0" text="Sector" />
+            <TextField />
+         </children>
+      </HBox>
+      <HBox prefHeight="33.0" prefWidth="479.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="54.0" text="Adres" />
+            <TextField />
+         </children>
+      </HBox>
+      <ToggleButton mnemonicParsing="false" text="ToggleButton" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

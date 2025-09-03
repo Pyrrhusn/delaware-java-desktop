@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   <TableView fx:id="tableViewBedrijf" prefHeight="418.0" prefWidth="882.0">
+     <columns>
+       <TableColumn fx:id="bedrijfnaam" prefWidth="75.0" text="naam" />
+       <TableColumn fx:id="bedrijfsector" prefWidth="75.0" text="sector" />
+         <TableColumn fx:id="bedrijfAdres" prefWidth="184.8000030517578" text="adres" />
+         <TableColumn fx:id="aantalKlantenBedrijf" prefWidth="116.0" text="aantal klanten" />
+     </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+   </TableView>
+   </children>
+</fx:root>

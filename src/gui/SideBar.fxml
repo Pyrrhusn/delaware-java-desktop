@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="hBoxchild" prefHeight="813.0" prefWidth="1759.0" stylesheets="@../css/bedrijfScherm.css" type="HBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="vBox" prefHeight="427.0" prefWidth="177.0" style="-fx-background-color: C0C0C0;">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../graphics/testDelaware-removebg-preview.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView> 
+            <Button fx:id="toonBedrijvenBtn" mnemonicParsing="false" onAction="#toonBedrijven" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: C42728;" styleClass="sideBarButton" text="Bedrijven" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="sideBarButton" fx:id="toonVoegBedrijfBtn" mnemonicParsing="false" onAction="#toonVoegBedrijf" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: C42728;" text="Voeg Bedrijf" textFill="WHITE" />
+            <Button fx:id="beheerProfielenBtn" mnemonicParsing="false" onAction="#beheerProfielen" prefHeight="54.0" prefWidth="169.0" text="Beheer Profielen">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <BorderPane prefHeight="503.0" prefWidth="167.0" VBox.vgrow="ALWAYS">
+               <bottom>
+                  <Button fx:id="logoutBtn" alignment="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="48.0" prefWidth="163.0" text="Logout" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</fx:root>

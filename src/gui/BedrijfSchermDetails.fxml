@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="400.0" prefWidth="613.0" type="VBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+<VBox fx:id="rootVBoxBedrijf" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="802.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="36.0" prefWidth="600.0" spacing="25.0">
+            <children>
+                <Label text="Naam:" />
+                <Label fx:id="naamLbl" text="Delaware" />
+                <ImageView fx:id="logoImageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="350.0" />
+                  </HBox.margin></ImageView>
+            </children>
+            <padding>
+                <Insets bottom="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="31.0" prefWidth="580.0" spacing="25.0">
+            <children>
+                <Label text="Sector:" />
+                <Label fx:id="sectorLbl" text="Voeding" />
+                <Label text="Adres:" />
+                <Label fx:id="adresLbl" text="Teststraat 22, 8400 ostende" />
+            </children>
+        </HBox>
+        <HBox prefHeight="30.0" prefWidth="595.0" spacing="25.0">
+            <children>
+                <Label text="Betalingsmogelijkheden:" />
+                <Label fx:id="betalingsmogelijkhedenLbl" text="Label" />
+            </children>
+        </HBox>
+        <HBox prefHeight="26.0" prefWidth="613.0" spacing="25.0">
+            <children>
+                <Label text="Contactgegevens: " />
+                <Label fx:id="contactgegevensLbl" text="Label" HBox.hgrow="ALWAYS" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="25.0" prefWidth="595.0" spacing="22.0">
+            <children>
+                <Label text="BTW nummer:" />
+                <Label fx:id="btwNrLbl" text="Label" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" top="5.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="15.0" prefWidth="595.0">
+            <children>
+                <Label prefHeight="18.0" prefWidth="484.0" text="Klant account" />
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="236.0" text="Leverancier account" />
+            </children>
+        </HBox>
+        <HBox prefHeight="62.0" prefWidth="579.0" spacing="5.0">
+            <children>
+                <TableView fx:id="klantAccountTableView" prefHeight="62.0" prefWidth="350.0">
+                    <columns>
+                        <TableColumn fx:id="klantGebruikersnaamCol" prefWidth="100.0" text="Gebruikersnaam" />
+                        <TableColumn fx:id="klantIsActiefCol" prefWidth="100.0" text="Is actief" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <TableView fx:id="leverancierAccountTableView" prefHeight="62.0" prefWidth="369.0">
+                    <columns>
+                        <TableColumn fx:id="leverancierGebruikersnaamCol" prefWidth="100.0" text="Gebruikersnaam" />
+                        <TableColumn fx:id="leverancierIsActiefCol" minWidth="5.60003662109375" prefWidth="100.0" text="Is actief" />
+                    </columns>
+                    <HBox.margin>
+                        <Insets right="5.0" />
+                    </HBox.margin>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </HBox>
+        <Button fx:id="wijzigBedrijfButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#wijzigBedrijfGegevens" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: C42728;" text="Wijzig" textAlignment="CENTER" textFill="WHITE">
+            <VBox.margin>
+                <Insets bottom="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+</VBox>
+
+</fx:root>
